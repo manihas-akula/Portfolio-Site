@@ -3,20 +3,24 @@ let navBar = document.querySelector("nav");
 let myNav = document.getElementById("nav-bar");
 let navLinks = myNav.querySelectorAll("li");
 let hamMenu = document.getElementById("ham-menu");
+let tButton = document.getElementById("scroll-top-btn");
 hamMenu.addEventListener("click",()=>{
     myNav.classList.toggle("active");
     if (myNav.classList.contains('active')) {
         hamMenu.classList.remove("fa-bars");
         hamMenu.classList.add("fa-times");
+        tButton.style.display="none";
     } else {
         hamMenu.classList.remove("fa-times");
         hamMenu.classList.add("fa-bars");
+        tButton.style.display="grid";
     }
 });
 navLinks.forEach((navLink) => {
     navLink.addEventListener("click",()=> {
         myNav.classList.remove("active");
         hamMenu.classList.add("fa-bars");
+        tButton.style.display="grid";
     });
 });
 window.onscroll = function () {
