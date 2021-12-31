@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vamshi Vemula</title>
+    <!-- Favicon Image -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="manifest" href="assets/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <!------------------------------->
+    <div class="loader">
+        <div></div>
+    </div>
+    <div id="content">
+        <!--Progress Bar-->
+        <div class="progress-container">
+        <div id="progress-bar"></div>
+        </div>
+        <!--Navigation Bar-->
+        <nav>
+        <a href="#intro" id="home">Vamshi Vemula</a>
+        <i class="fas fa-bars" id="ham-menu"></i>
+        <ul id="nav-bar">
+        <li><a href="#about">Blog</a></li>
+        <li><a href="#proj-container">My work</a></li>
+        <li><a href="#about-cont">About</a></li>
+        <li><a href="#connect">Connect</a></li>
+        </ul>
+        </nav>
+        <!--Intro Section-->
+        <section id="intro">
+        <img id="pro-pic" src="assets/profile-pic.png" alt="">
+        <h1>Hey, I am Vamshi Vemula</h1>
+        <h2>Cyber Security Enthusiast , Programmer , Developer</h2>
+        </section>
+        <!--Projects Section-->
+        <div id="proj-container">
+        <h1 class="heading">My Work</h1>
+        <section id="projects">
+        <div class="proj-img"><img src="assets/project.svg"></div>
+        <div class="project">
+        <p>Developed Some <span>Web Sites</span> and Written Some <span>Scripts</span> for Bug Bounty Recon</p>
+        <a target="_blank" href="https://github.com/vamshi-vemula?tab=repositories" class="button">View Projects</a>
+        </div>
+        </section>
+        </div>
+        <!--About Section-->
+        <div id="about-cont">
+        <h1 class="heading">About Me</h1>
+        <section id="about-section">
+        <div class="about-img"><img src="assets/about.svg"></div>
+        <div class="about">
+        <p>My name is <span>Vamshi Vemula</span> from India. 
+        I'm&nbsp;Interested in Cyber Security. 
+        Currently pursuing <span>B.Tech</span> in Computer Science & Engineering.
+        </p>
+        </div>
+        </section>
+        </div>
+        <!--Connect Section-->
+        <div id="connect">
+        <h3>Connect with me on below Platforms... :)</h3>
+        <section id="connection-items">
+        <ul>
+        <li class="con-item">
+        <a target="_blank" href="https://github.com/vamshi-vemula" id="profile-link" >
+        <i class="fa fa-github"></i>GitHub
+        </a>
+        </li>
+        <li class="con-item">
+        <a target="_blank" href="https://www.linkedin.com/in/vamshivemula444/" >
+        <i class="fa fa-linkedin"></i>LinkedIn
+        </a>
+        </li>
+        <li class="con-item">
+        <a target="_blank" href="https://twitter.com/vamshi_vemula_" >
+        <i class="fa fa-twitter"></i>Twitter
+        </a>
+        </li>
+        <li class="con-item">
+        <a target="_blank" href="https://instagram.com/vamshi_vemula_" >
+        <i class="fa fa-instagram"></i>Instagram
+        </a>
+        </li>
+        </ul>
+        </section>
+        </div>
+        <!--Footer Section-->
+        <footer>
+        <p>Designed and Developed by <a href="https://github.com/vamshi-vemula/"> Vamshi Vemula</a></p>
+        </footer>
+        <!--Scroll To Top-->
+        <button id="scroll-top-btn">
+        <i class="fas fa-arrow-down"></i>
+        </button>
+    </div> 
+    <!--Script-->
+    <script>
+        $(window).on("load",function() {
+            $(".loader").fadeOut(1000);
+            $("#content").fadeIn(1000);
+        });
+    </script>
+    <script src="code.js"></script>
+    <!--Made By Vamshi Vemula-->
+    <!-- https://github.com/vamshi-vemula -->
+    <!-------------------------------------->
+</body>
+</html>
