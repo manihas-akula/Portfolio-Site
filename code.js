@@ -1,52 +1,30 @@
 /* Toggle Menu */
-let navBar = document.querySelector("nav");
-let myNav = document.getElementById("nav-bar");
-let navLinks = myNav.querySelectorAll("li");
-let hamMenu = document.getElementById("ham-menu");
-let tButton = document.getElementById("scroll-top-btn");
-hamMenu.addEventListener("click",()=>{
-    myNav.classList.toggle("active");
-    if (myNav.classList.contains('active')) {
-        hamMenu.classList.remove("fa-bars");
-        hamMenu.classList.add("fa-times");
-        tButton.style.display="none";
-    } else {
-        hamMenu.classList.remove("fa-times");
-        hamMenu.classList.add("fa-bars");
-        tButton.style.display="grid";
-    }
+let home = document.querySelectorAll("nav ul li a")[0];
+let about = document.querySelectorAll("nav ul li a")[2];
+let projects = document.querySelectorAll("nav ul li a")[3];
+let achieve = document.querySelectorAll("nav ul li a")[4];
+/* NavLinks onclick Events */
+home.addEventListener("click",()=>{
+    $("#about-cont").fadeOut(0);
+    $("#ach-cont").fadeOut(0);
+    $("#proj-container").fadeOut(0);
+    $("#intro").fadeIn(1000);
 });
-navLinks.forEach((navLink) => {
-    navLink.addEventListener("click",()=> {
-        myNav.classList.remove("active");
-        hamMenu.classList.add("fa-bars");
-        tButton.style.display="grid";
-    });
+about.addEventListener("click",()=>{
+    $("#intro").fadeOut(0);
+    $("#ach-cont").fadeOut(0);
+    $("#proj-container").fadeOut(0);
+    $("#about-cont").fadeIn(1000);
 });
-window.onscroll = function () {
-    /* Progress Bar */
-    let pos = document.documentElement.scrollTop;
-    let calHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-    let scroll = (pos * 100)/ calHeight;
-    document.getElementById("progress-bar").style.width= `${scroll}%`;
-    /* Scroll To Top */
-    let scrollTopButton = document.getElementById("scroll-top-btn");
-    let scrollIcon = document.querySelector("#scroll-top-btn i");
-    if (pos>300) {
-        scrollIcon.classList.add("fa-arrow-up");
-        scrollIcon.classList.remove("fa-arrow-down");
-
-    } else {
-        scrollIcon.classList.add("fa-arrow-down");
-        scrollIcon.classList.remove("fa-arrow-up");
-    }
-}
-scrollButton = document.getElementById("scroll-top-btn");
-scrollIcon = document.querySelector("#scroll-top-btn i");
-scrollButton.addEventListener("click",() => {
-    if (scrollIcon.classList.contains('fa-arrow-down')) {
-        document.getElementById('proj-container').scrollIntoView();
-    } else {
-        document.documentElement.scrollTop=0;
-    }
+achieve.addEventListener("click",()=>{
+    $("#intro").fadeOut(0);
+    $("#about-cont").fadeOut(0);
+    $("#proj-container").fadeOut(0);
+    $("#ach-cont").fadeIn(1000);
+});
+projects.addEventListener("click",()=>{
+    $("#intro").fadeOut(0);
+    $("#about-cont").fadeOut(0);
+    $("#ach-cont").fadeOut(0);
+    $("#proj-container").fadeIn(1000);
 });

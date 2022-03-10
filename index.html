@@ -13,109 +13,108 @@
     <meta name="theme-color" content="#ffffff">
     <!-- Styles -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
-    <!------------------------------->
+    <!--Loading Bar-->
     <div class="loader">
         <div></div>
     </div>
     <div id="content">
-        <!--Progress Bar-->
-        <div class="progress-container">
-        <div id="progress-bar"></div>
-        </div>
         <!--Navigation Bar-->
         <nav>
-        <a href="#intro" id="home">Vamshi Vemula</a>
-        <i class="fas fa-bars" id="ham-menu"></i>
-        <ul id="nav-bar">
-        <li><a href="#about">Blog</a></li>
-        <li><a href="#proj-container">My work</a></li>
-        <li><a href="#about-cont">About</a></li>
-        <li><a href="#connect">Connect</a></li>
-        </ul>
+            <ul id="nav-bar">
+            <li><a>Home</a></li>
+            <li><a href="https://vamshi-vemula.medium.com/" target="_blank">Blog</a></li>
+            <li><a>About</a></li>
+            <li><a>Projects</a></li>
+            <li><a>Achievements</a></li>
+            </ul>
         </nav>
         <!--Intro Section-->
         <section id="intro">
-        <img id="pro-pic" src="assets/profile-pic.png" alt="">
-        <h1>Hey, I am Vamshi Vemula</h1>
-        <h2>Cyber Security Enthusiast , Programmer , Developer</h2>
+            <img id="pro-pic" src="assets/profile-pic.png" alt="">
+            <h1>Hey, I am Vamshi Vemula</h1>
+            <h2>Security Researcher, Cyber Security Enthusiast, Programmer</h2>
         </section>
-        <!--Projects Section-->
-        <div id="proj-container">
-        <h1 class="heading">My Work</h1>
-        <section id="projects">
-        <div class="proj-img"><img src="assets/project.svg"></div>
-        <div class="project">
-        <p>Developed Some <span>Web Sites</span> and Written Some <span>Scripts</span> for Bug Bounty Recon</p>
-        <a target="_blank" href="https://github.com/vamshi-vemula?tab=repositories" class="button">View Projects</a>
-        </div>
-        </section>
-        </div>
         <!--About Section-->
         <div id="about-cont">
-        <h1 class="heading">About Me</h1>
-        <section id="about-section">
-        <div class="about-img"><img src="assets/about.svg"></div>
-        <div class="about">
-        <p>My name is <span>Vamshi Vemula</span> from India. 
-        I'm&nbsp;Interested in Cyber Security. 
-        Currently pursuing <span>B.Tech</span> in Computer Science & Engineering.
-        </p>
+            <div class="container">
+                <h1 class="heading">&dollar;whoami </h1>
+            </div>
+            <section id="about-section">
+            <div class="about-img"><img src="assets/about.png"></div>
+            <div class="about">
+            <p>My name is <span>Vamshi Vemula</span> from India. <br>
+            Interested in Cyber Security and Ethical Hacking. <br> 
+            Currently pursuing <span>B.Tech</span> in Computer Science & Engineering.<br>
+            Part Time Bug Bounty Hunter <span>&</span> CTF Player 
+            </p>
+            </div>
+            </section>
         </div>
-        </section>
+        <!--Projects Section-->
+        <div id="proj-container">
+            <div class="container">
+                <h1 class="heading">&dollar;cat projects.txt </h1>
+            </div>
+            <section id="projects">
+            <div class="proj-img"><img src="assets/projects.png"></div>
+            <div class="project">
+            <p><span>&bull;</span> Developed Websites like Portfolio, Product Landing Page, Documentation Page etc.<br>
+            <span>&bull;</span> Made some Tools and Scripts for Bug Bounty and Ethical Hacking.
+            </p>
+            <a target="_blank" href="https://github.com/vamshi-vemula?tab=repositories" class="button">View Projects</a>
+            </div>
+            </section>
         </div>
-        <!--Connect Section-->
-        <div id="connect">
-        <h3>Connect with me on below Platforms... :)</h3>
-        <section id="connection-items">
-        <ul>
-        <li class="con-item">
-        <a target="_blank" href="https://github.com/vamshi-vemula" id="profile-link" >
-        <i class="fa fa-github"></i>GitHub
-        </a>
-        </li>
-        <li class="con-item">
-        <a target="_blank" href="https://www.linkedin.com/in/vamshivemula444/" >
-        <i class="fa fa-linkedin"></i>LinkedIn
-        </a>
-        </li>
-        <li class="con-item">
-        <a target="_blank" href="https://twitter.com/vamshi_vemula_" >
-        <i class="fa fa-twitter"></i>Twitter
-        </a>
-        </li>
-        <li class="con-item">
-        <a target="_blank" href="https://instagram.com/vamshi_vemula_" >
-        <i class="fa fa-instagram"></i>Instagram
-        </a>
-        </li>
-        </ul>
-        </section>
+        <!--Achieve Section-->
+        <div id="ach-cont">
+            <div class="container">
+                <h1 class="heading">&dollar;cat achievs.txt </h1>
+            </div>
+            <div class="achieves">
+                <p><span>&bull;</span> Recieved <span><a href="https://byjus.com/reporting-issues-on-byjus-website/hall-of-fame/">Byju's</a></span> Hall of Fame for Security Researchers.<br>
+                <span>&bull;</span> Recieved Token of Appreciation & Bug Bounty Reward from <span><a href="https://www.linkedin.com/posts/vamshivemula444_bugbounty-ethicalhacking-activity-6898264451661873152-4X1f">Freecharge</a></span>.<br>
+                <span>&bull;</span> Recieved Certificate of Appreciation from <span><a href="https://www.linkedin.com/posts/vamshivemula444_bugbounty-ethicalhacking-activity-6901435394743779328-JkNd">Firstcry</a></span> Security Team.<br>
+                <span>&bull;</span> My Tryhackme Profile Banner<br>
+                </p>
+            </div>
+            <div class="thm">
+                <script src="https://tryhackme.com/badge/408596" style="font-size: small;width: 100%;"></script>
+            </div>
         </div>
         <!--Footer Section-->
-        <footer>
-        <p>Designed and Developed by <a href="https://github.com/vamshi-vemula/"> Vamshi Vemula</a></p>
-        </footer>
-        <!--Scroll To Top-->
-        <button id="scroll-top-btn">
-        <i class="fas fa-arrow-down"></i>
-        </button>
+        <div id="connect">
+            <ul>
+            <li class="con-item">
+            <a target="_blank" href="https://github.com/vamshi-vemula" id="profile-link"><i class="fa fa-github"></i></a>
+            </li>
+            <li class="con-item">
+            <a target="_blank" href="https://www.linkedin.com/in/vamshivemula444/"><i class="fa fa-linkedin"></i></a>
+            </li>
+            <li class="con-item">
+            <a target="_blank" href="https://twitter.com/vamshi_vemula_"><i class="fa fa-twitter"></i></a>
+            </li>
+            <li class="con-item">
+            <a target="_blank" href="https://instagram.com/vamshi_vemula_"><i class="fa fa-instagram"></i></a>
+            </li>
+            </ul>
+        </div>
     </div> 
     <!--Script-->
     <script>
         $(window).on("load",function() {
             $(".loader").fadeOut(1000);
-            $("#content").fadeIn(1000);
+            $("body").fadeIn(1000);
+            var body = document.getElementsByTagName('body')[0];
+            body.style.backgroundImage = 'url(assets/bg.jpg)';
         });
     </script>
     <script src="code.js"></script>
     <!--Made By Vamshi Vemula-->
     <!-- https://github.com/vamshi-vemula -->
-    <!-------------------------------------->
 </body>
 </html>
