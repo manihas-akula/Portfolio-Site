@@ -2,7 +2,8 @@
 
 My Personal Portfolio Web Site
 
-Web Site Deployed on Heroku : https://vamshi-vemula.herokuapp.com/
+Web Site Hosted on Google Firebase Hosting.
+Link : https://vamshi-vemula.in
 
 #### Technologies Used :
 * HTML 
